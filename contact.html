@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo">Deepak</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1 class="page-title">Contact</h1>
+    <div class="card">
+        📧 Email: deepak@email.com <br><br>
+        📞 Phone: +91 9876543210 <br><br>
+        📍 Coimbatore, Tamil Nadu
+    </div>
+</section>
+
+<script>
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const target = link.getAttribute("href");
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>

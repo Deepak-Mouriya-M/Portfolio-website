@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo">Deepak</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1 class="page-title">Projects</h1>
+    <div class="card">Gaming Laptop Store Website</div>
+    <div class="card">Portfolio Website</div>
+    <div class="card">3-axis Robotic Arm</div>
+    <div class="card">AI-Driven Next-Gen Firewall (ongoing)</div>
+    <div class="card">SOS & GeoFencing App for Women & Elderly (Ongoing)</div>
+    <div class="card">Fake Account and Impersonation Detection Tool (Ongoing)</div>
+</section>
+
+<script>
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const target = link.getAttribute("href");
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>

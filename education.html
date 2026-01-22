@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Education</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo">Deepak</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a class="active" href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1 class="page-title">Education</h1>
+    <div class="card">
+        B.E – Second Year <br>
+        KPRIET, Coimbatore. <br><br>
+
+        CGPA: 7.56 <br>
+    </div>
+    <div class="card">
+        Higher Secondary Eduction: <br>
+        Jayam Vidhyalaya Matric Higher Secondary School, Doddampatti, <br>
+        Harur, Dharmapuri. <br><br>
+
+        10th mark: 419 <br><br>
+        11th mark: 506 <br><br>
+        12th mark: 512 <br><br>
+    </div>
+</section>
+
+<script>
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const target = link.getAttribute("href");
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>

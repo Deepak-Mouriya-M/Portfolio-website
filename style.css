@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #b74b4b;
+    text-decoration: none;
+}
+
+nav a{
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+}
+
+/* SECTIONS */
+section{
+    min-height: 100vh;
+    padding: 10rem 9%;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.home-img img{
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #b74b4b;
+}
+
+.home-content h1{
+    font-size: 6rem;
+}
+
+.home-content h3{
+    font-size: 3.5rem;
+    margin: 1rem 0;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+    max-width: 600px;
+}
+
+span{
+    color: #b74b4b;
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.social-icons a{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b74b4b;
+    color: #b74b4b;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    background: #b74b4b;
+    color: black;
+    box-shadow: 0 0 20px #b74b4b;
+    transform: translateY(-5px);
+}
+
+/* PAGE CONTENT */
+.page-title{
+    font-size: 5rem;
+    color: #b74b4b;
+    margin-bottom: 3rem;
+}
+
+.card{
+    background: #111;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* HIRE ME BUTTON */
+.btn{
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.2rem 3.5rem;
+    background: transparent;
+    border: 2px solid #b74b4b;
+    color: #b74b4b;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 4rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+    transform: scale(1.05);
+    transform-box: border-box;
+}
+
+
+/* ===========================
+   PAGE LOAD ANIMATION
+=========================== */
+section {
+    animation: pageFade 0.8s ease-in-out;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   CARD HOVER TRANSITION
+=========================== */
+.card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* ===========================
+   NAV LINK TRANSITION
+=========================== */
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #b74b4b;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* ===========================
+   PAGE EXIT ANIMATION
+=========================== */
+body.fade-out {
+    animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
