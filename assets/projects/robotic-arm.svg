@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c111d" />
+      <stop offset="100%" stop-color="#161b2e" />
+    </linearGradient>
+    <linearGradient id="cyber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- Blueprint grid lines -->
+  <g stroke="#38bdf8" stroke-width="0.8" opacity="0.08">
+    <path d="M0,50 H800 M0,100 H800 M0,150 H800 M0,200 H800 M0,250 H800 M0,300 H800 M0,350 H800 M0,400 H800" />
+    <path d="M50,0 V450 M100,0 V450 M150,0 V450 M200,0 V450 M250,0 V450 M300,0 V450 M350,0 V450 M400,0 V450 M450,0 V450 M500,0 V450 M550,0 V450 M600,0 V450 M650,0 V450 M700,0 V450 M750,0 V450" />
+  </g>
+
+  <!-- Award badge top right -->
+  <g transform="translate(560, 40)">
+    <rect width="200" height="38" rx="19" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="35" y="24" fill="#fbbf24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">🏆 Winner - STEM 2025</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="80" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="800">3-Axis Robotic Arm</text>
+  <text x="60" y="108" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="14">Arduino • C++ • Inverse Kinematics • Servo Mechanics</text>
+
+  <!-- Schematic Arm Vector -->
+  <g transform="translate(180, 140)">
+    <!-- Base Platform -->
+    <rect x="50" y="240" width="180" height="24" rx="6" fill="#1e293b" stroke="#475569" stroke-width="2" />
+    <rect x="100" y="210" width="80" height="30" rx="4" fill="#334155" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="140" cy="225" r="8" fill="#f59e0b" />
+
+    <!-- Joint 1 to Joint 2 (Arm Link 1) -->
+    <line x1="140" y1="210" x2="220" y2="120" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" />
+    <circle cx="140" cy="210" r="14" fill="#0f172a" stroke="#f59e0b" stroke-width="4" filter="url(#glow)" />
+    
+    <!-- Joint 2 to Joint 3 (Arm Link 2) -->
+    <line x1="220" y1="120" x2="340" y2="90" stroke="#ef4444" stroke-width="10" stroke-linecap="round" />
+    <circle cx="220" cy="120" r="13" fill="#0f172a" stroke="#ef4444" stroke-width="4" filter="url(#glow)" />
+
+    <!-- Joint 3 to Gripper -->
+    <line x1="340" y1="90" x2="400" y2="110" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" />
+    <circle cx="340" cy="90" r="11" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+
+    <!-- End Effector Gripper Claws -->
+    <path d="M400,110 L430,95 L445,105" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M400,110 L430,125 L445,115" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Coordinate HUD overlay -->
+    <rect x="280" y="160" width="180" height="70" rx="8" fill="#090d16" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1" />
+    <text x="295" y="185" fill="#38bdf8" font-family="'Courier New', monospace" font-size="12" font-weight="700">Theta 1: 45.2°</text>
+    <text x="295" y="202" fill="#38bdf8" font-family="'Courier New', monospace" font-size="12" font-weight="700">Theta 2: 78.6°</text>
+    <text x="295" y="219" fill="#4ade80" font-family="'Courier New', monospace" font-size="12" font-weight="700">State: CALIBRATED</text>
+  </g>
+</svg>

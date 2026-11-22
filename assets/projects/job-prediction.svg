@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090e1a" />
+      <stop offset="100%" stop-color="#141a2e" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <text x="60" y="70" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="800">AI Job Role Prediction</text>
+  <text x="60" y="98" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="14">Machine Learning • Predictive Analytics • Career Skill Mapping</text>
+
+  <!-- Left: Candidate Profile Features -->
+  <g transform="translate(60, 130)">
+    <rect width="320" height="230" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <text x="24" y="35" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="700">Skill Competency Matrix</text>
+    
+    <!-- Skill bars -->
+    <text x="24" y="70" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Python / Data Science</text>
+    <rect x="24" y="78" width="270" height="8" rx="4" fill="#1e293b" />
+    <rect x="24" y="78" width="240" height="8" rx="4" fill="#38bdf8" />
+
+    <text x="24" y="110" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Machine Learning / Math</text>
+    <rect x="24" y="118" width="270" height="8" rx="4" fill="#1e293b" />
+    <rect x="24" y="118" width="220" height="8" rx="4" fill="#818cf8" />
+
+    <text x="24" y="150" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Backend &amp; Databases</text>
+    <rect x="24" y="158" width="270" height="8" rx="4" fill="#1e293b" />
+    <rect x="24" y="158" width="190" height="8" rx="4" fill="#a78bfa" />
+
+    <text x="24" y="190" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Problem Solving / Logic</text>
+    <rect x="24" y="198" width="270" height="8" rx="4" fill="#1e293b" />
+    <rect x="24" y="198" width="250" height="8" rx="4" fill="#34d399" />
+  </g>
+
+  <!-- Right: ML Inference & Recommendations -->
+  <g transform="translate(420, 130)">
+    <rect width="320" height="230" rx="14" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" />
+    <text x="24" y="35" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="700">Top Predicted Career Matches</text>
+
+    <!-- Role 1 -->
+    <rect x="20" y="55" width="280" height="46" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="35" y="82" fill="#e0e7ff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">1. AI / ML Engineer</text>
+    <rect x="220" y="67" width="65" height="22" rx="11" fill="#4f46e5" />
+    <text x="236" y="82" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">96.4%</text>
+
+    <!-- Role 2 -->
+    <rect x="20" y="110" width="280" height="46" rx="8" fill="#172554" stroke="#2563eb" stroke-width="1" />
+    <text x="35" y="137" fill="#dbeafe" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">2. Data Scientist</text>
+    <rect x="220" y="122" width="65" height="22" rx="11" fill="#2563eb" />
+    <text x="236" y="137" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">91.8%</text>
+
+    <!-- Role 3 -->
+    <rect x="20" y="165" width="280" height="46" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1" />
+    <text x="35" y="192" fill="#d1fae5" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">3. Full-Stack AI Developer</text>
+    <rect x="220" y="177" width="65" height="22" rx="11" fill="#059669" />
+    <text x="236" y="192" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700">87.5%</text>
+  </g>
+</svg>

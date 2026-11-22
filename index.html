@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Mouriya M. | AI & Full-Stack Developer</title>
+  
+  <meta name="description" content="Personal Portfolio of Deepak Mouriya M. - AI & Data Science Engineering Student, Aspiring AI Developer, and Full-Stack Builder.">
+  <meta name="keywords" content="Deepak Mouriya, AI Developer, Full Stack Developer, Machine Learning, KPRIET, Portfolio">
+  <meta name="author" content="Deepak Mouriya M.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23e63946'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='50' fill='white'>DM</text></svg>">
+
+  <!-- Google Fonts & Font Awesome Icons & Devicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo" aria-label="Deepak Mouriya Home">
+        <div class="logo-monogram">DM</div>
+        <div class="logo-text">Deepak<span>.</span></div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="Resume.pdf" download="Deepak_Mouriya_Resume.pdf" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Available for Internships &amp; Collaborations</span>
+          </div>
+          
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Deepak <span class="highlight">Mouriya</span> M.</h1>
+          
+          <h2 class="hero-headline">
+            Building Intelligent Experiences Through <br>
+            <span class="typewriter-wrapper" id="typewriter"></span>
+          </h2>
+          
+          <p class="hero-desc">
+            An AI &amp; Data Science engineering student passionate about building intelligent applications, exploring emerging technologies, and transforming creative ideas into practical solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="Resume.pdf" download="Deepak_Mouriya_Resume.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Socials -->
+          <div class="hero-socials">
+            <a href="https://github.com/Deepak-Mouriya-M" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/deepak-mouriya-ma7919327/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:deepakmouriya2006@gmail.com" class="social-pill" aria-label="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:7418499564" class="social-pill" aria-label="Call Deepak">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portrait Frame -->
+        <div class="hero-visual">
+          <div class="portrait-container">
+            <div class="portrait-glow-ring"></div>
+            <div class="portrait-frame">
+              <img src="profile.jpg" alt="Deepak Mouriya M." class="portrait-img">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-chip top-right">
+              <div class="chip-icon green">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="chip-text">
+                <h4>AI &amp; Data Science</h4>
+                <p>KPRIET Coimbatore</p>
+              </div>
+            </div>
+
+            <div class="floating-chip bottom-left">
+              <div class="chip-icon crimson">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <div class="chip-text">
+                <h4>8+ Real Projects</h4>
+                <p>Web &bull; AI &bull; Hardware</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-user-astronaut"></i>
+          <span>About Me</span>
+        </div>
+        <h2 class="section-title">Architecting Solutions at the Intersection of <span>AI &amp; Software</span></h2>
+        
+        <div class="about-grid">
+          <div class="about-story">
+            <p>
+              I am an <strong>Artificial Intelligence and Data Science</strong> undergraduate at <strong>KPR Institute of Engineering and Technology (KPRIET)</strong>, Coimbatore. My journey in technology is driven by a deep fascination with how code and machine intelligence can solve real-world challenges.
+            </p>
+            <p>
+              From training deep neural networks for <strong>image captioning</strong> and <strong>predictive modeling</strong> to crafting full-stack web platforms and autonomous <strong>3-axis robotic arms</strong>, I believe in learning by actively building. I do not just write code; I strive to understand system architecture, data dynamics, and user experience.
+            </p>
+            <p>
+              Beyond pure software engineering, I am continuously broadening my horizons with <strong>cybersecurity fundamentals, game development, robotics, and automation</strong>. I approach every project with curiosity, discipline, and a commitment to clean, functional engineering.
+            </p>
+
+            <!-- 4 Pillars Grid -->
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <i class="fa-solid fa-brain"></i>
+                <h4>AI &amp; Deep Learning</h4>
+                <p>Predictive analytics, computer vision, and local AI model integration.</p>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h4>Full-Stack Craft</h4>
+                <p>Responsive, reactive web applications with Node.js, Express, and modern styling.</p>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h4>Robotics &amp; IoT</h4>
+                <p>Kinematic arm prototyping with Arduino, C++, and hardware controls.</p>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>Cybersecurity &amp; Exploration</h4>
+                <p>Curiosity-driven research into network security, game design, and automation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info Box -->
+          <div class="about-sidebar">
+            <h3 class="sidebar-title">
+              <i class="fa-solid fa-id-card"></i>
+              <span>Profile Snapshot</span>
+            </h3>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-signature"></i></div>
+                <div class="info-content">
+                  <div class="label">Full Name</div>
+                  <div class="val">Deepak Mouriya M.</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="info-content">
+                  <div class="label">Age</div>
+                  <div class="val">19 Years</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info-content">
+                  <div class="label">Education</div>
+                  <div class="val">B.E. AI &amp; Data Science (2nd / 3rd Year)</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="info-content">
+                  <div class="label">Institution</div>
+                  <div class="val">KPRIET, Coimbatore (Batch 2028)</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="info-content">
+                  <div class="label">Academic CGPA</div>
+                  <div class="val" style="color: var(--accent-cyan); font-family: var(--font-mono);">7.62 / 10</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-content">
+                  <div class="label">Hometown</div>
+                  <div class="val">Harur, Dharmapuri, Tamil Nadu</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-code"></i>
+          <span>Technical Toolkit</span>
+        </div>
+        <h2 class="section-title">Core Competencies &amp; <span>Technologies</span></h2>
+        <p class="section-desc">
+          Structured view of programming languages, libraries, machine learning architectures, and domains I actively develop with.
+        </p>
+
+        <!-- Skill Filters -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="aiml">AI &amp; Machine Learning</button>
+          <button class="filter-btn" data-filter="backend">Database &amp; Backend</button>
+          <button class="filter-btn" data-filter="interests">Areas of Interest</button>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="skills-categories-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="category-header">
+              <i class="fa-solid fa-terminal"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills-tags">
+              <div class="skill-tag">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+                <span class="level-badge">Intermediate</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C++</span>
+                <span class="level-badge">Core / Robotics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card" data-category="web">
+            <div class="category-header">
+              <i class="fa-solid fa-globe"></i>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skills-tags">
+              <div class="skill-tag">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category-card" data-category="aiml">
+            <div class="category-header">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <div class="skills-tags">
+              <div class="skill-tag">
+                <i class="fa-solid fa-brain"></i>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-tensorflow-original colored"></i>
+                <span>Deep Learning</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-image"></i>
+                <span>Image Captioning</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Predictive Models</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI App Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & Backend -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="category-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Database &amp; Backend</h3>
+            </div>
+            <div class="skills-tags">
+              <div class="skill-tag">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-server"></i>
+                <span>Database Fundamentals</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-flask-original"></i>
+                <span>Flask</span>
+              </div>
+              <div class="skill-tag">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js Runtime</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Areas of Interest -->
+          <div class="skill-category-card" data-category="interests">
+            <div class="category-header">
+              <i class="fa-solid fa-compass"></i>
+              <h3>Areas of Interest</h3>
+            </div>
+            <div class="skills-tags">
+              <div class="skill-tag">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Cybersecurity</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Game Development</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-gears"></i>
+                <span>Robotics</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Software Development</span>
+              </div>
+              <div class="skill-tag">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Experience</span>
+        </div>
+        <h2 class="section-title">Professional <span>Internship</span></h2>
+        <p class="section-desc">
+          Hands-on industry exposure and software engineering experience in full-stack development.
+        </p>
+
+        <div class="experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Development Intern</h3>
+                  <div class="timeline-company">
+                    <i class="fa-solid fa-building"></i>
+                    <span>Skillchemy &bull; Salem, Tamil Nadu</span>
+                  </div>
+                </div>
+                <div class="timeline-badge">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>22 Dec 2025 &ndash; 20 Jan 2026</span>
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Completed an intensive hands-on full-stack development internship focusing on practical web programming, scalable page layouts, client-side scripting, and backend runtime environments.
+              </p>
+
+              <h4 style="font-size: 0.92rem; color: #f8fafc; margin-bottom: 0.6rem; font-weight: 600;">
+                Key Learnings &amp; Focus Areas:
+              </h4>
+              <ul class="timeline-learnings">
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Frontend Engineering: Implemented responsive, structured web pages using semantic HTML5 and modern CSS techniques.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Dynamic Logic: Developed interactive UI behaviors and DOM manipulation utilizing JavaScript.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Backend Fundamentals: Built foundational knowledge of Node.js server runtimes and HTTP request lifecycle.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Data &amp; Persistence: Explored database fundamentals, entity structures, and full-stack development problem-solving approaches.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Database Fundamentals</span>
+                <span class="tech-pill">Full-Stack Lifecycle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Portfolio Showcase</span>
+        </div>
+        <h2 class="section-title">Featured Works &amp; <span>Intelligent Systems</span></h2>
+        <p class="section-desc">
+          A showcase of real-world applications spanning artificial intelligence, full-stack web platforms, deep learning, and hardware robotics.
+        </p>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-pfilter="all">All Projects</button>
+          <button class="project-filter-btn" data-pfilter="aiml">AI &amp; Machine Learning</button>
+          <button class="project-filter-btn" data-pfilter="web">Web Development</button>
+          <button class="project-filter-btn" data-pfilter="robotics">Robotics &amp; Hardware</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: BrandVault AI (Special Featured Card with Live Link) -->
+          <article class="project-card" data-pcategory="aiml">
+            <div class="featured-badge status-badge-live">
+              <i class="fa-solid fa-bolt"></i>
+              <span>LIVE DEMO</span>
+            </div>
+            <div class="project-img-wrapper">
+              <img src="assets/projects/brandvault.svg" alt="BrandVault AI Platform Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">BrandVault AI</h3>
+              </div>
+              <p class="project-desc">
+                An innovative AI-powered branding platform designed to automate identity generation, custom brand assets, visual design guidelines, and cohesive design systems in real-time.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">AI Platform</span>
+                <span class="tech-pill">Branding Engine</span>
+                <span class="tech-pill">Full-Stack</span>
+                <span class="tech-pill">Cloud Deployed</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('brandvault')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/roshanvikram/BRANDVAULT-AI.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://brandvault-ai-1.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="Open Live Web Application">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: VoiceOS (AI Assistant - Ongoing) -->
+          <article class="project-card" data-pcategory="aiml">
+            <div class="featured-badge" style="background: rgba(14, 165, 233, 0.9);">
+              <i class="fa-solid fa-gear fa-spin"></i>
+              <span>ONGOING</span>
+            </div>
+            <div class="project-img-wrapper">
+              <img src="assets/projects/voiceos.svg" alt="VoiceOS AI Voice Assistant Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">VoiceOS</h3>
+              </div>
+              <p class="project-desc">
+                An intelligent AI-powered voice assistant designed for natural voice-based desktop interaction, fast intent execution, and intelligent tasks powered by local Ollama LLMs and speech pipelines.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Ollama</span>
+                <span class="tech-pill">Local LLMs</span>
+                <span class="tech-pill">STT / TTS</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('voiceos')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/VoiceOS-AI-Powered-Voice-Assistant.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: 3-Axis Robotic Arm (Award Winning) -->
+          <article class="project-card" data-pcategory="robotics">
+            <div class="featured-badge" style="background: rgba(245, 158, 11, 0.95); color: #000;">
+              <i class="fa-solid fa-trophy"></i>
+              <span>STEM 2025 WINNER</span>
+            </div>
+            <div class="project-img-wrapper">
+              <img src="assets/projects/robotic-arm.svg" alt="3-Axis Robotic Arm Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">3-Axis Robotic Arm</h3>
+              </div>
+              <p class="project-desc">
+                Award-winning physical robotic manipulator built with Arduino and C++. Features multi-degree-of-freedom servo actuation, forward kinematics, and precision pick-and-place gripper control.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Arduino</span>
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">Kinematics</span>
+                <span class="tech-pill">Hardware Prototype</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('roboticarm')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/3-Axis-Robotic-Arm.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Image Caption Generator -->
+          <article class="project-card" data-pcategory="aiml">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/image-caption.svg" alt="Image Caption Generator Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Image Caption Generator</h3>
+              </div>
+              <p class="project-desc">
+                A computer vision and natural language deep learning pipeline that processes arbitrary input imagery and generates grammatically coherent contextual descriptive sentences.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">Keras</span>
+                <span class="tech-pill">Deep Learning</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('imagecaption')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/Image-Caption-Generator.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: AI Job Role Prediction -->
+          <article class="project-card" data-pcategory="aiml">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/job-prediction.svg" alt="AI Job Role Prediction Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">AI Job Role Prediction</h3>
+              </div>
+              <p class="project-desc">
+                Machine learning classification model that analyzes student competency profiles, technical skillsets, and academic metrics to recommend the most optimal career paths.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Data Analytics</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('jobprediction')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/AI-Job-Role-Prediction.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Personal Budget & Expense Tracker -->
+          <article class="project-card" data-pcategory="web">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/expense-tracker.svg" alt="Personal Budget and Expense Tracker Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Budget &amp; Expense Tracker</h3>
+              </div>
+              <p class="project-desc">
+                Full-stack personal finance application allowing users to monitor financial inflows, categorize daily expenditures, inspect monthly analytics, and enforce budget thresholds.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">MongoDB</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('expensetracker')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/Personal-Budget-and-Expense-Tracker.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Hostel Complaint Management System -->
+          <article class="project-card" data-pcategory="web">
+            <div class="project-img-wrapper">
+              <img src="assets/projects/hostel-system.svg" alt="Hostel Complaint Management System Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Hostel Complaint System</h3>
+              </div>
+              <p class="project-desc">
+                Web-based maintenance ticketing workflow enabling students to register hostel issues, administrative teams to dispatch tickets, and residents to trace real-time resolution status.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">HTML / CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Database</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('hostelcomplaint')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <a href="https://github.com/Deepak-Mouriya-M/Hostel-Complaint-Management-System.git" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: WildGuard AI (Ongoing) -->
+          <article class="project-card" data-pcategory="aiml">
+            <div class="featured-badge" style="background: rgba(14, 165, 233, 0.9);">
+              <i class="fa-solid fa-gear fa-spin"></i>
+              <span>ONGOING</span>
+            </div>
+            <div class="project-img-wrapper">
+              <img src="assets/projects/wildguard.svg" alt="WildGuard AI Preview" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">WildGuard AI</h3>
+              </div>
+              <p class="project-desc">
+                An intelligent wildlife conservation and automated monitoring system utilizing computer vision inference to detect wild animals and mitigate human-wildlife conflicts near boundaries.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Computer Vision</span>
+                <span class="tech-pill">AI Detection</span>
+                <span class="tech-pill">Alerting System</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-details" onclick="openProjectModal('wildguard')">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="project-actions">
+                  <span class="tech-pill" style="color: var(--accent-cyan);"><i class="fa-solid fa-shield-cat"></i> AI Vision</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section class="education-achievements" id="education">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-award"></i>
+          <span>Milestones</span>
+        </div>
+        <h2 class="section-title">Education &amp; <span>Key Recognitions</span></h2>
+        <p class="section-desc">
+          Academic foundation and competitive milestones that shaped my engineering perspective.
+        </p>
+
+        <div class="edu-achieve-grid">
+          <!-- Left Column: Education -->
+          <div class="edu-column">
+            <div class="column-header">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Academic Background</h3>
+            </div>
+
+            <div class="cards-stack">
+              <!-- College -->
+              <div class="edu-card">
+                <span class="card-badge">2024 &ndash; 2028 (Undergraduate)</span>
+                <h4 class="edu-degree">B.E. &ndash; Artificial Intelligence &amp; Data Science</h4>
+                <div class="edu-institution">
+                  <i class="fa-solid fa-university"></i>
+                  <span>KPR Institute of Engineering and Technology (KPRIET)</span>
+                </div>
+                <div class="edu-meta">
+                  <span><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</span>
+                  <span class="cgpa-chip"><i class="fa-solid fa-star"></i> CGPA: 7.62</span>
+                </div>
+              </div>
+
+              <!-- High School -->
+              <div class="edu-card">
+                <span class="card-badge">Higher Secondary Education</span>
+                <h4 class="edu-degree">State Board &ndash; HSC &amp; SSLC</h4>
+                <div class="edu-institution">
+                  <i class="fa-solid fa-school"></i>
+                  <span>Jayam Vidhyalaya Matric Higher Secondary School, Doddampatti</span>
+                </div>
+                <div class="edu-meta" style="margin-top: 0.5rem;">
+                  <span><i class="fa-solid fa-location-dot"></i> Harur, Dharmapuri</span>
+                </div>
+                <div class="edu-meta" style="margin-top: 0.5rem; gap: 0.85rem;">
+                  <span><strong>12th:</strong> 512 / 600</span>
+                  <span>&bull;</span>
+                  <span><strong>11th:</strong> 506 / 600</span>
+                  <span>&bull;</span>
+                  <span><strong>10th:</strong> 419 / 500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Achievements -->
+          <div class="achieve-column">
+            <div class="column-header">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Honors &amp; Showcases</span>
+            </div>
+
+            <div class="cards-stack">
+              <!-- STEM 2025 -->
+              <div class="achieve-card">
+                <span class="card-badge" style="color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.4);">
+                  1st Prize &bull; Winner
+                </span>
+                <h4 class="achieve-title">
+                  <i class="fa-solid fa-trophy"></i>
+                  <span>Winner &ndash; STEM 2025 Competition</span>
+                </h4>
+                <p class="achieve-desc">
+                  Awarded First Place for the innovative mechanical design, embedded circuit integration, and inverse kinematics development of a physical <strong>3-Axis Robotic Arm Prototype</strong>.
+                </p>
+              </div>
+
+              <!-- Innovosence 2025 -->
+              <div class="achieve-card">
+                <span class="card-badge" style="color: var(--accent-blue); border-color: rgba(56, 189, 248, 0.4);">
+                  Project Showcase
+                </span>
+                <h4 class="achieve-title">
+                  <i class="fa-solid fa-certificate"></i>
+                  <span>Participant &ndash; Innovosence 2025</span>
+                </h4>
+                <p class="achieve-desc">
+                  Demonstrated live working operation and programmable servo controls of a 3-Axis Arduino-driven robotic arm to engineering faculty and industry evaluators.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Get in Touch</span>
+        </div>
+        <h2 class="section-title">Let's Connect &amp; <span>Build Together</span></h2>
+        <p class="section-desc">
+          Feel free to reach out for internship inquiries, project collaborations, technical discussions, or just to say hello!
+        </p>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Cards -->
+          <div class="contact-info-cards">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Email Address</h4>
+                  <a href="mailto:deepakmouriya2006@gmail.com" id="contact-email">deepakmouriya2006@gmail.com</a>
+                </div>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('deepakmouriya2006@gmail.com', 'Email copied!')" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Phone Number</h4>
+                  <a href="tel:7418499564" id="contact-phone">+91 7418499564</a>
+                </div>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('+917418499564', 'Phone number copied!')" title="Copy Phone Number">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Location</h4>
+                  <p>Coimbatore &bull; Harur, Dharmapuri, TN</p>
+                </div>
+              </div>
+              <span class="tech-pill"><i class="fa-solid fa-earth-asia"></i> India</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Professional Network</h4>
+                  <a href="https://www.linkedin.com/in/deepak-mouriya-ma7919327/" target="_blank" rel="noopener noreferrer">
+                    linkedin.com/in/deepak-mouriya
+                  </a>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/deepak-mouriya-ma7919327/" target="_blank" rel="noopener noreferrer" class="btn-copy">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Open Source Repos</h4>
+                  <a href="https://github.com/Deepak-Mouriya-M" target="_blank" rel="noopener noreferrer">
+                    github.com/Deepak-Mouriya-M
+                  </a>
+                </div>
+              </div>
+              <a href="https://github.com/Deepak-Mouriya-M" target="_blank" rel="noopener noreferrer" class="btn-copy">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form -->
+          <div class="contact-form-wrapper">
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem;">
+              Send a Direct Message
+            </h3>
+            <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Alex Henderson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-input" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-input" placeholder="Internship Opportunity / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Hello Deepak, I came across your portfolio and wanted to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="logo-monogram">DM</div>
+            <div class="logo-text">Deepak Mouriya<span>.</span></div>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.75rem; max-width: 380px;">
+            Crafting intelligent software solutions, neural systems, and full-stack products.
+          </p>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Deepak-Mouriya-M" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/deepak-mouriya-ma7919327/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:deepakmouriya2006@gmail.com" class="social-pill" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Deepak Mouriya M. All rights reserved.</p>
+        <p>Built with Passion, HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" onclick="closeProjectModalOnOverlay(event)">
+    <div class="modal-container" id="modal-container">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-banner">
+        <img id="modal-banner-img" src="" alt="Project Visual">
+      </div>
+
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        <div class="modal-subtitle" id="modal-subtitle">Subtitle</div>
+        
+        <p class="modal-desc" id="modal-desc">Detailed project description goes here.</p>
+
+        <h3 class="modal-section-heading">Key Features &amp; Capabilities</h3>
+        <ul class="modal-features-list" id="modal-features">
+          <!-- Dynamically populated -->
+        </ul>
+
+        <h3 class="modal-section-heading">Technologies Used</h3>
+        <div class="project-tech" id="modal-tech" style="margin-bottom: 1rem;">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div class="modal-actions" id="modal-actions">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--accent-cyan);"></i>
+    <span id="toast-msg">Text copied to clipboard!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       INTERACTIVE JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    // --------------------------------------------------------------------------
+    // 1. PROJECT DATA REPOSITORY (Accurate real information)
+    // --------------------------------------------------------------------------
+    const projectsData = {
+      brandvault: {
+        title: "BrandVault AI",
+        subtitle: "AI-Powered Branding & Visual Identity Generation Platform",
+        img: "assets/projects/brandvault.svg",
+        desc: "BrandVault AI is a full-featured web platform that automates brand identity development. It generates custom brand color palettes, typographic hierarchies, logo assets, and comprehensive brand guidelines using modern AI models, enabling founders and designers to establish a distinct visual presence in minutes.",
+        features: [
+          "Instant automated brand identity and color palette generator.",
+          "Curated design system blueprints with responsive web preview.",
+          "Exportable branding assets, typography guides, and vector elements.",
+          "Live deployed cloud environment with high availability on Render."
+        ],
+        tech: ["AI Branding Engine", "Full-Stack Web", "Modern CSS Glassmorphism", "Render Cloud Hosting"],
+        github: "https://github.com/roshanvikram/BRANDVAULT-AI.git",
+        live: "https://brandvault-ai-1.onrender.com/"
+      },
+      voiceos: {
+        title: "VoiceOS",
+        subtitle: "Intelligent AI-Powered Voice Assistant (Ongoing)",
+        img: "assets/projects/voiceos.svg",
+        desc: "VoiceOS is an ongoing open-source AI desktop voice assistant designed for private, localized natural language interaction. By pairing Ollama local LLMs with speech-to-text (STT) and text-to-speech (TTS) engines, VoiceOS executes system commands, answers questions, and automates desktop actions with zero external cloud dependencies.",
+        features: [
+          "Hands-free voice query capture with real-time speech-to-text processing.",
+          "Integration with local Ollama models for high-speed, offline intelligence.",
+          "Automated desktop workflows, application launching, and conversational response.",
+          "Customizable TTS speech synthesis voice models."
+        ],
+        tech: ["Python", "Ollama", "Local LLMs", "SpeechRecognition", "Text-to-Speech (TTS)", "OS Automation"],
+        github: "https://github.com/Deepak-Mouriya-M/VoiceOS-AI-Powered-Voice-Assistant.git",
+        live: null
+      },
+      roboticarm: {
+        title: "3-Axis Robotic Arm",
+        subtitle: "Multi-DOF Articulated Robotic Manipulator (STEM 2025 Winner)",
+        img: "assets/projects/robotic-arm.svg",
+        desc: "A custom-engineered 3-Axis articulated robotic arm prototype that clinched First Place at the STEM 2025 Competition and was spotlighted at Innovosence 2025. It integrates high-torque servo motors, custom structural link mechanics, and Arduino microcontroller programming for precision pick-and-place trajectories.",
+        features: [
+          "Calculated inverse and forward kinematic joint positioning.",
+          "Arduino microcontroller firmware written in optimized C++.",
+          "Custom multi-angle servo gripper for payload handling.",
+          "Honored with First Place Winner at the STEM 2025 Competition."
+        ],
+        tech: ["Arduino", "C++", "Kinematics", "Servo Actuation", "Embedded Systems", "Hardware Prototyping"],
+        github: "https://github.com/Deepak-Mouriya-M/3-Axis-Robotic-Arm.git",
+        live: null
+      },
+      imagecaption: {
+        title: "Image Caption Generator",
+        subtitle: "Deep Learning Neural Vision-to-Language Architecture",
+        img: "assets/projects/image-caption.svg",
+        desc: "An end-to-end deep learning framework that understands visual context and generates natural language captions describing image contents. It bridges Convolutional Neural Networks (CNN) for spatial feature extraction with Recurrent/Transformer neural networks for sequential token decoding.",
+        features: [
+          "Feature extraction from raw imagery using deep convolutional layers.",
+          "Sequential vocabulary prediction and natural language sentence generation.",
+          "Implemented with TensorFlow, Keras, and data preprocessing pipelines.",
+          "Evaluated on standard image-caption benchmarks with BLEU score tracking."
+        ],
+        tech: ["Python", "TensorFlow", "Keras", "Deep Learning", "CNN", "LSTM / NLP", "Image Processing"],
+        github: "https://github.com/Deepak-Mouriya-M/Image-Caption-Generator.git",
+        live: null
+      },
+      jobprediction: {
+        title: "AI Job Role Prediction",
+        subtitle: "Machine Learning Career Recommendation & Skill Profiler",
+        img: "assets/projects/job-prediction.svg",
+        desc: "An intelligent predictive system that evaluates candidate skill proficiencies, academic specializations, and behavioral attributes to recommend the most well-matched technology career tracks.",
+        features: [
+          "Multi-class classification algorithms trained on industry skill matrices.",
+          "Feature importance analysis highlighting prerequisite skills for each career.",
+          "Interactive input schema for student profile evaluation.",
+          "Confidence scoring and ranked job role matches."
+        ],
+        tech: ["Python", "Scikit-Learn", "Machine Learning", "Pandas", "NumPy", "Data Analytics"],
+        github: "https://github.com/Deepak-Mouriya-M/AI-Job-Role-Prediction.git",
+        live: null
+      },
+      expensetracker: {
+        title: "Personal Budget and Expense Tracker",
+        subtitle: "Full-Stack Financial Health & Expense Monitoring App",
+        img: "assets/projects/expense-tracker.svg",
+        desc: "A full-stack web application tailored for personal finance management. Users can record income and expenditures, categorize financial movements, inspect analytical graphs, and keep budget overruns under control.",
+        features: [
+          "Interactive dashboard with visual expenditure breakdowns.",
+          "Real-time expense categorization and monthly balance calculation.",
+          "Secure MongoDB data storage and Node.js RESTful API endpoints.",
+          "Responsive, modular frontend built with React components."
+        ],
+        tech: ["React", "Node.js", "Express", "MongoDB", "REST APIs", "Modern CSS"],
+        github: "https://github.com/Deepak-Mouriya-M/Personal-Budget-and-Expense-Tracker.git",
+        live: null
+      },
+      hostelcomplaint: {
+        title: "Hostel Complaint Management System",
+        subtitle: "Web-Based Incident Dispatch & Facility Maintenance Tracker",
+        img: "assets/projects/hostel-system.svg",
+        desc: "A centralized digital grievance system created to replace manual hostel maintenance records. Students can log facility issues across electrical, plumbing, and Wi-Fi categories, while hostel wardens and administrative staff can track and resolve tickets systematically.",
+        features: [
+          "Role-based submission workflows for students and hostel staff.",
+          "Real-time ticket state tracking: Pending, Assigned, and Resolved.",
+          "Filterable incident logs with timestamps and room allocation tags.",
+          "Clean, accessible web interface for rapid filing from mobile devices."
+        ],
+        tech: ["HTML5", "CSS3", "JavaScript", "Node.js", "Database", "RESTful Architecture"],
+        github: "https://github.com/Deepak-Mouriya-M/Hostel-Complaint-Management-System.git",
+        live: null
+      },
+      wildguard: {
+        title: "WildGuard AI",
+        subtitle: "AI Wildlife Monitoring & Human-Animal Conflict Prevention (Ongoing)",
+        img: "assets/projects/wildguard.svg",
+        desc: "WildGuard AI is an ongoing computer vision initiative aimed at preserving wildlife habitats and protecting agricultural borders. It monitors live camera streams to detect wildlife crossing into residential or farm zones and triggers proactive alerts to mitigate conflict.",
+        features: [
+          "Deep learning animal detection trained on diverse wildlife species.",
+          "Automated boundary surveillance and intrusion zone geofencing.",
+          "Low-latency alert notification pipeline for forest officials.",
+          "Conservation-first architecture designed for non-invasive perimeter defense."
+        ],
+        tech: ["Python", "OpenCV", "Computer Vision", "Object Detection", "AI Alerting"],
+        github: null,
+        live: null
+      }
+    };
+
+    // --------------------------------------------------------------------------
+    // 2. MODAL LOGIC
+    // --------------------------------------------------------------------------
+    function openProjectModal(key) {
+      const data = projectsData[key];
+      if (!data) return;
+
+      document.getElementById("modal-banner-img").src = data.img;
+      document.getElementById("modal-title").textContent = data.title;
+      document.getElementById("modal-subtitle").textContent = data.subtitle;
+      document.getElementById("modal-desc").textContent = data.desc;
+
+      // Features
+      const featuresContainer = document.getElementById("modal-features");
+      featuresContainer.innerHTML = "";
+      data.features.forEach(feat => {
+        const li = document.createElement("li");
+        li.innerHTML = `<i class="fa-solid fa-check"></i> <span>${feat}</span>`;
+        featuresContainer.appendChild(li);
+      });
+
+      // Tech Pills
+      const techContainer = document.getElementById("modal-tech");
+      techContainer.innerHTML = "";
+      data.tech.forEach(t => {
+        const span = document.createElement("span");
+        span.className = "tech-pill";
+        span.textContent = t;
+        techContainer.appendChild(span);
+      });
+
+      // Actions
+      const actionsContainer = document.getElementById("modal-actions");
+      actionsContainer.innerHTML = "";
+
+      if (data.live) {
+        const liveBtn = document.createElement("a");
+        liveBtn.href = data.live;
+        liveBtn.target = "_blank";
+        liveBtn.rel = "noopener noreferrer";
+        liveBtn.className = "btn btn-primary";
+        liveBtn.innerHTML = `<i class="fa-solid fa-arrow-up-right-from-square"></i> <span>Open Live Demo</span>`;
+        actionsContainer.appendChild(liveBtn);
+      }
+
+      if (data.github) {
+        const ghBtn = document.createElement("a");
+        ghBtn.href = data.github;
+        ghBtn.target = "_blank";
+        ghBtn.rel = "noopener noreferrer";
+        ghBtn.className = "btn btn-secondary";
+        ghBtn.innerHTML = `<i class="fa-brands fa-github"></i> <span>View on GitHub</span>`;
+        actionsContainer.appendChild(ghBtn);
+      }
+
+      const modal = document.getElementById("project-modal");
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById("project-modal");
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    function closeProjectModalOnOverlay(e) {
+      if (e.target.id === "project-modal") {
+        closeProjectModal();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeProjectModal();
+    });
+
+    // --------------------------------------------------------------------------
+    // 3. TYPEWRITER EFFECT
+    // --------------------------------------------------------------------------
+    const typewriterPhrases = [
+      "AI, Code & Creativity.",
+      "Machine Learning & Deep Neural Nets.",
+      "Full-Stack Web Engineering.",
+      "Hardware Kinematics & Robotics.",
+      "Intelligent Voice & Vision Systems."
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typewriterElement = document.getElementById("typewriter");
+
+    function typeWriter() {
+      const currentPhrase = typewriterPhrases[phraseIndex];
+      if (isDeleting) {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let speed = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        speed = 1800; // Pause at end of phrase
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % typewriterPhrases.length;
+        speed = 400;
+      }
+
+      setTimeout(typeWriter, speed);
+    }
+    typeWriter();
+
+    // --------------------------------------------------------------------------
+    // 4. NAVBAR SCROLL EFFECT & ACTIVE SECTION TRACKER
+    // --------------------------------------------------------------------------
+    const navbar = document.getElementById("navbar");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("section[id]");
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      const scrollPos = window.scrollY;
+
+      // Navbar styling
+      if (scrollPos > 40) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+      // Back to Top button
+      if (scrollPos > 400) {
+        backToTopBtn.classList.add("show");
+      } else {
+        backToTopBtn.classList.remove("show");
+      }
+
+      // Active nav spy
+      let currentSectionId = "";
+      sections.forEach(section => {
+        const top = section.offsetTop - 120;
+        const height = section.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSectionId}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // --------------------------------------------------------------------------
+    // 5. MOBILE MENU TOGGLE
+    // --------------------------------------------------------------------------
+    const mobileToggle = document.getElementById("mobile-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    mobileToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      const icon = mobileToggle.querySelector("i");
+      if (navMenu.classList.contains("active")) {
+        icon.className = "fa-solid fa-xmark";
+      } else {
+        icon.className = "fa-solid fa-bars-staggered";
+      }
+    });
+
+    // Close mobile menu on link click
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        mobileToggle.querySelector("i").className = "fa-solid fa-bars-staggered";
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 6. SKILLS CATEGORY FILTER
+    // --------------------------------------------------------------------------
+    const skillFilterBtns = document.querySelectorAll(".filter-btn");
+    const skillCards = document.querySelectorAll(".skill-category-card");
+
+    skillFilterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        skillFilterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+        skillCards.forEach(card => {
+          if (filter === "all" || card.getAttribute("data-category") === filter) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 7. PROJECTS FILTER
+    // --------------------------------------------------------------------------
+    const pFilterBtns = document.querySelectorAll(".project-filter-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    pFilterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        pFilterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-pfilter");
+        projectCards.forEach(card => {
+          const category = card.getAttribute("data-pcategory");
+          if (filter === "all" || category === filter) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // --------------------------------------------------------------------------
+    // 8. CLIPBOARD COPY UTILITY & TOAST
+    // --------------------------------------------------------------------------
+    function copyToClipboard(text, customMessage) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(customMessage || "Copied to clipboard!");
+      }).catch(err => {
+        showToast("Error copying text");
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      const toastMsg = document.getElementById("toast-msg");
+      toastMsg.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+
+    // --------------------------------------------------------------------------
+    // 9. CONTACT FORM INTERACTION
+    // --------------------------------------------------------------------------
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const submitBtn = document.getElementById("form-submit-btn");
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>Preparing Email...</span>`;
+
+      // Compose mailto as fallback so it directly opens user's email client
+      const mailtoUrl = `mailto:deepakmouriya2006@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
+
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+        showToast("Opening email client! Thanks for reaching out.");
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>`;
+        document.getElementById("contact-form").reset();
+      }, 700);
+    }
+  </script>
+</body>
+</html>

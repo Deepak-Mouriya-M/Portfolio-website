@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Mouriya M. - Resume</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #b74b4b;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --link: #0284c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f1f5f9;
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .resume-actions {
+      max-width: 850px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #9b2226;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: #f8fafc;
+    }
+
+    .page {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2.5rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h1.name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .contact-row a {
+      color: var(--link);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 1.2rem;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.25rem;
+      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .summary-text {
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .skills-table td {
+      padding: 0.25rem 0;
+      vertical-align: top;
+    }
+
+    .skills-table td.cat {
+      width: 25%;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .skills-table td.val {
+      color: var(--text);
+    }
+
+    /* Entry items */
+    .entry {
+      margin-bottom: 0.85rem;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.15rem;
+    }
+
+    .entry-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .entry-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+
+    .entry-bullets {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      font-size: 0.88rem;
+      color: var(--text);
+    }
+
+    .entry-bullets li {
+      margin-bottom: 0.25rem;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .resume-actions {
+        display: none;
+      }
+      .page {
+        box-shadow: none;
+        border: none;
+        padding: 0.4in;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-actions">
+    <a href="index.html" class="btn btn-secondary">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Back to Portfolio</span>
+    </a>
+    <div style="display: flex; gap: 0.75rem;">
+      <a href="Resume.pdf" download="Deepak_Mouriya_Resume.pdf" class="btn btn-primary">
+        <i class="fa-solid fa-download"></i>
+        <span>Download PDF</span>
+      </a>
+      <button onclick="window.print()" class="btn btn-secondary">
+        <i class="fa-solid fa-print"></i>
+        <span>Print</span>
+      </button>
+    </div>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1 class="name">DEEPAK MOURIYA M.</h1>
+      <div class="tagline">AI &amp; Data Science Undergraduate | Full-Stack &amp; AI Solutions Developer</div>
+      <div class="contact-row">
+        <span><i class="fa-solid fa-phone"></i> +91 7418499564</span>
+        <a href="mailto:deepakmouriya2006@gmail.com"><i class="fa-solid fa-envelope"></i> deepakmouriya2006@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> Harur, Dharmapuri, TN &bull; Coimbatore</span>
+      </div>
+      <div class="contact-row" style="margin-top: 0.35rem;">
+        <a href="https://www.linkedin.com/in/deepak-mouriya-ma7919327/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/deepak-mouriya</a>
+        <a href="https://github.com/Deepak-Mouriya-M" target="_blank"><i class="fa-brands fa-github"></i> github.com/Deepak-Mouriya-M</a>
+        <a href="https://brandvault-ai-1.onrender.com/" target="_blank"><i class="fa-solid fa-bolt"></i> Live Project: BrandVault AI</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-user"></i> Professional Summary</h2>
+      <p class="summary-text">
+        Passionate AI &amp; Data Science undergraduate at KPRIET with hands-on experience in full-stack web development, deep learning neural networks, and embedded hardware systems. Winner of the STEM 2025 Competition for an autonomous 3-Axis Robotic Arm prototype. Dedicated to architecting robust, intelligent applications bridging predictive machine learning models with intuitive, real-world user interfaces.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-code"></i> Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="cat">Languages:</td>
+          <td class="val">Python, C++, JavaScript (ES6+), HTML5, CSS3</td>
+        </tr>
+        <tr>
+          <td class="cat">AI &amp; Machine Learning:</td>
+          <td class="val">Machine Learning, Deep Learning, CNNs, LSTMs, TensorFlow, Keras, Scikit-Learn, Ollama Local LLMs, OpenCV</td>
+        </tr>
+        <tr>
+          <td class="cat">Web &amp; Backend:</td>
+          <td class="val">React, Node.js, Express, Flask, MongoDB, RESTful APIs, JSON, Responsive Architecture</td>
+        </tr>
+        <tr>
+          <td class="cat">Hardware &amp; Tools:</td>
+          <td class="val">Arduino Microcontrollers, Servo Kinematics, Git, GitHub, Linux Shell, Full-Stack Debugging</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Skillchemy &mdash; Full Stack Development Intern</div>
+          <div class="entry-date">22 Dec 2025 &ndash; 20 Jan 2026</div>
+        </div>
+        <div class="entry-sub">
+          <span>Salem, Tamil Nadu &bull; Full-Stack Web Development, Node.js &amp; Client-Server Systems</span>
+          <span>Internship</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Developed and deployed responsive, user-centric web modules using semantic HTML5, modern CSS3 styling, and modular JavaScript.</li>
+          <li>Engineered backend routing and asynchronous request processing pipelines using Node.js runtime and REST architecture.</li>
+          <li>Implemented foundational database structures and data persistence routines, reinforcing structured software debugging and problem-solving.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Featured Technical Projects</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">BrandVault AI &mdash; AI-Powered Branding &amp; Visual Identity Platform</div>
+          <div class="entry-date">
+            <a href="https://github.com/roshanvikram/BRANDVAULT-AI.git" target="_blank" style="color: var(--link); margin-right: 0.5rem;"><i class="fa-brands fa-github"></i> GitHub</a> |
+            <a href="https://brandvault-ai-1.onrender.com/" target="_blank" style="color: var(--link); margin-left: 0.5rem;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+        <div class="entry-sub"><span>Tech: Full-Stack Web, AI Branding Engine, Cloud Deployment (Render)</span></div>
+        <ul class="entry-bullets">
+          <li>Built an AI platform generating automated color palettes, typographic hierarchies, and brand guideline systems in real-time.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">VoiceOS &mdash; AI-Powered Voice Assistant with Local Intelligence (Ongoing)</div>
+          <div class="entry-date"><a href="https://github.com/Deepak-Mouriya-M/VoiceOS-AI-Powered-Voice-Assistant.git" target="_blank" style="color: var(--link);">GitHub Repository</a></div>
+        </div>
+        <div class="entry-sub"><span>Tech: Python, Ollama, Local LLMs, SpeechRecognition, Text-to-Speech (TTS)</span></div>
+        <ul class="entry-bullets">
+          <li>Developed a local-first voice assistant running offline Ollama LLMs for private voice command execution and system automation.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">3-Axis Robotic Arm Prototype &mdash; (1st Place Winner, STEM 2025)</div>
+          <div class="entry-date"><a href="https://github.com/Deepak-Mouriya-M/3-Axis-Robotic-Arm.git" target="_blank" style="color: var(--link);">GitHub Repository</a></div>
+        </div>
+        <div class="entry-sub"><span>Tech: Arduino, C++, Forward/Inverse Kinematics, Servo Actuators</span></div>
+        <ul class="entry-bullets">
+          <li>Engineered a 3-DOF articulated robotic manipulator using calibrated servo kinematics and Arduino C++ for precision pick-and-place.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Image Caption Generator &mdash; Deep Learning Vision-to-Language Model</div>
+          <div class="entry-date"><a href="https://github.com/Deepak-Mouriya-M/Image-Caption-Generator.git" target="_blank" style="color: var(--link);">GitHub Repository</a></div>
+        </div>
+        <div class="entry-sub"><span>Tech: Python, TensorFlow, Keras, CNNs, LSTMs, Image Processing</span></div>
+        <ul class="entry-bullets">
+          <li>Implemented a CNN-LSTM neural pipeline extracting high-dimensional visual features to generate descriptive natural language captions.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Personal Budget &amp; Expense Tracker &mdash; MERN Stack Financial Analytics</div>
+          <div class="entry-date"><a href="https://github.com/Deepak-Mouriya-M/Personal-Budget-and-Expense-Tracker.git" target="_blank" style="color: var(--link);">GitHub Repository</a></div>
+        </div>
+        <div class="entry-sub"><span>Tech: React, Node.js, Express, MongoDB, RESTful APIs</span></div>
+        <ul class="entry-bullets">
+          <li>Created a full-stack personal finance platform enabling transaction tracking, monthly budget limits, and visual expenditure metrics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">B.E. in Artificial Intelligence and Data Science &mdash; KPRIET, Coimbatore</div>
+          <div class="entry-date">CGPA: 7.62 / 10</div>
+        </div>
+        <div class="entry-sub">
+          <span>KPR Institute of Engineering and Technology &bull; Anna University Affiliated</span>
+          <span>Batch: 2024 &ndash; 2028</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Higher Secondary Certificate (HSC) &amp; SSLC &mdash; Jayam Vidhyalaya Matric HSS</div>
+          <div class="entry-date">Score: 87.83%</div>
+        </div>
+        <div class="entry-sub">
+          <span>Harur, Dharmapuri, Tamil Nadu &bull; 12th: 512/600 | 11th: 506/600 | 10th: 419/500</span>
+          <span>Completed: 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Achievements -->
+    <section>
+      <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Honors &amp; Achievements</h2>
+      <ul class="entry-bullets">
+        <li><strong>Winner (1st Prize), STEM 2025 Competition:</strong> Awarded First Place for innovative engineering, mechanical design, and embedded control of a 3-Axis Robotic Arm Prototype.</li>
+        <li><strong>Participant &amp; Showcase, Innovosence 2025:</strong> Selected to demonstrate operational kinematics and real-time servo manipulation of an Arduino-powered Robotic Arm.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
