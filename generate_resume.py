@@ -132,7 +132,7 @@ def build_pdf(filename="Resume.pdf"):
     # 1. HEADER
     story.append(Paragraph("DEEPAK MOURIYA M.", styles['MainTitle']))
     story.append(Spacer(1, 2))
-    story.append(Paragraph("AI &amp; Data Science Undergraduate | Full-Stack &amp; AI Solutions Developer", styles['SubTitle']))
+    story.append(Paragraph("Pre-Final Year AI &amp; Data Science Undergraduate | Full-Stack &amp; AI Solutions Developer", styles['SubTitle']))
     story.append(Spacer(1, 3))
     
     contact_p = ("+91 7418499564 &nbsp;|&nbsp; "
@@ -164,10 +164,10 @@ def build_pdf(filename="Resume.pdf"):
     # 2. PROFESSIONAL SUMMARY
     add_section_header("Professional Summary")
     summary_text = (
-        "Passionate AI &amp; Data Science undergraduate at KPRIET with hands-on experience in full-stack web development, "
-        "deep learning neural networks, and embedded hardware systems. Winner of the STEM 2025 Competition for an autonomous "
-        "3-Axis Robotic Arm prototype. Dedicated to architecting robust, intelligent applications bridging predictive machine learning "
-        "models with intuitive, real-world user interfaces."
+        "I am a pre-final year Artificial Intelligence and Data Science undergraduate at KPR Institute of Engineering and Technology (KPRIET), Coimbatore, "
+        "with hands-on experience in full-stack web development, deep learning neural networks, and embedded hardware systems. Winner of the STEM 2025 "
+        "Competition for an autonomous 3-Axis Robotic Arm prototype. Dedicated to architecting robust, intelligent applications bridging predictive machine "
+        "learning models with intuitive, real-world user interfaces."
     )
     story.append(Paragraph(summary_text, styles['ResumeBody']))
     story.append(Spacer(1, 4))
