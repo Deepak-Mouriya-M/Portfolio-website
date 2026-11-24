@@ -292,7 +292,7 @@ def build_pdf(filename="Resume.pdf"):
     # 6. EDUCATION
     add_section_header("Education")
     edu_table = Table([
-        [Paragraph("<b>B.E. in Artificial Intelligence and Data Science</b> - KPRIET, Coimbatore", styles['ItemTitle']),
+        [Paragraph("<b>B.Tech in Artificial Intelligence and Data Science</b> - KPRIET, Coimbatore", styles['ItemTitle']),
          Paragraph("<b>CGPA: 7.62 / 10</b>", styles['ItemRight'])],
         [Paragraph("KPR Institute of Engineering and Technology | Anna University Affiliated", styles['ItemSub']),
          Paragraph("Batch: 2024 - 2028", styles['ItemSubRight'])],
